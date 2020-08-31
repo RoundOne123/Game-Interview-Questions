@@ -207,3 +207,9 @@ e、渐进式GC
 
 
 https://www.cnblogs.com/superjt/p/5946059.html
+
+-----------------------------------------------------------------------------
+实际开发中的GC优化：
+网络端protobuff，利用了反射，存在装箱、拆箱，改成无GC的；
+C#表格读取，不用csv或者text读取，直接用字节流读取。
+对特定的几个U3D值类型（Vector2， Vector3，Vector4，Quaternion）做硬编码优化（https://www.cnblogs.com/jgsbwcx/p/8981476.html）
